@@ -1,0 +1,9 @@
+<% @rawMaterials.each do |rawMat| %>
+  <tr>
+    <td><%= rawMat.name %></td>
+    <td><%= rawMat.description %></td>
+    <td><%= rawMat.cost %></td>
+    <td><%= link_to "Edit", edit_raw_material_path(rawMat), remote: true, class: "btn btn-default" %></td>
+    <td><%= link_to "Delete", raw_material_delete_path(rawMat), remote: true, class: "btn btn-danger" %></td>
+  </tr>
+<% end %>

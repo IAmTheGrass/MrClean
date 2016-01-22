@@ -1,23 +1,22 @@
 <div class="container">
   <div class="well">
-    <%= link_to "New Product", new_product_path, remote: true, class: "btn btn-primary" %>
+    <%= link_to "New Raw Material", new_raw_material_path, remote: true, class: "btn btn-primary" %>
   </div>
-  <div class="new-product"></div>
+  <div class="new-raw_materials"></div>
   
   <table class="table table-bordered table-striped">
     <thead>
       <tr>
         <th>Name</th>
-        <th>Product ID</th>
-        <th>Recipe ID</th>
-        <th>Price</th>
+        <th>Description</th>
+        <th>Cost</th>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
     </thead>
-    <tbody class="product-index">
+    <tbody class="raw_materials-index">
       <%= render "index" %>
     </tbody>
   </table>
 </div>
-<div id="product-modal" class="modal fade"></div>
+<div id="raw_materials-modal" class="modal fade"></div>

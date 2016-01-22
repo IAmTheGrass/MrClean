@@ -1,0 +1,9 @@
+$("ul.errors").html("")
+<% if @rawMaterials.errors.any? %>
+  <% @rawMaterials.errors.full_messages.each do |message| %>
+    $("ul.errors").append($("<li />").html("<%= message.html_safe %>"))
+  <% end %>
+<% else %>
+  $(".raw_materials-index").html("<%= escape_javascript(render 'index') %>")
+  $("#raw_materials-modal").modal("hide")
+<% end %>

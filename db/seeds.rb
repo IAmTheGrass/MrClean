@@ -15,3 +15,11 @@ Product.create!([
   {id: 4, name: "Nintendo Wii", price: 99.95},
   {id: 5, name: "Nintendo 3DS", price: 174.95}
 ])
+
+RawMaterials.create!([
+  {id: 1, name: "Nintendo Wii U Premium", description: 250},
+  {id: 2, name: "XBox 360 250GB", description: 250},
+  {id: 3, name: "Playstation 3 500 GB", description: 239.95},
+  {id: 4, name: "Nintendo Wii", description: 99.95},
+  {id: 5, name: "Nintendo 3DS", description: 174.95}
+])
